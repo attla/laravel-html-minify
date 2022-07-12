@@ -27,7 +27,7 @@ class ServiceProvider extends BaseServiceProvider
         $config = $this->app['config'];
 
         if ($this->app->bound('blade.compiler') && $config->get('html-minify.enable')) {
-            $this->app['blade.compiler']->extend(function ($value, $compiler) {
+            $this->app['blade.compiler']->extend(function ($value, $compiler) use ($config) {
                 return Minify::compile($value, [
                     'preserve_comments' => (bool) $config->get('html-minify.preserve_comments'),
                     'preserve_conditional_comments' => (bool) $config->get('html-minify.preserve_conditional_comments'),
