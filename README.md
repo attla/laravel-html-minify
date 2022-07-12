@@ -34,4 +34,4 @@ HTML_MINIFY_CONDITIONAL_COMMENTS = true
 
 ## License
 
-The Attla framework is open-sourced software licensed under the [MIT license](LICENSE) © [Octha](https://octha.com).
+This package is licensed under the [MIT license](LICENSE) © [Octha](https://octha.com).
