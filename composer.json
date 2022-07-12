@@ -1,0 +1,36 @@
+{
+    "name": "attla/laravel-html-minify",
+    "description": "A elegant HTML minifier for Laravel.",
+    "keywords": [
+        "attla",
+        "laravel",
+        "laravel-html-minify",
+        "html",
+        "minify",
+        "minifier"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lucas Nicolau",
+            "email": "lucas@octha.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Attla\\HtmlMinify\\": "src/"
+        }
+    },
+    "extra": {
+        "attla": {
+            "providers": [
+                "Attla\\HtmlMinify\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
